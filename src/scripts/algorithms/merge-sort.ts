@@ -1,3 +1,5 @@
+// The basis of merge sort is from https://mike.ma/ICS4U/unit_1_data_structures_and_algorithms/3._algorithms/3.4._merge_sort
+
 type CompareCallback = (a: number, b: number) => number;
 
 /**
