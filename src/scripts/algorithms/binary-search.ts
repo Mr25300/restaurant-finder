@@ -1,3 +1,4 @@
+// The basis of this code is from https://mike.ma/ICS4U/unit_1_data_structures_and_algorithms/3._algorithms/3.2._search
 type FilterCallback = (i: number) => number;
 
 /**
