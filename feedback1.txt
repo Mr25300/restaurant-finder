@@ -42,4 +42,4 @@ A: ?? + 1 + 2 + 3 + 4 = 100
 
 
 
-Having said that. 2 days is not enough for me to parse this code. More feedback to follow.
+Having said that. 2 days is not enough for me to parse this code. More feedback to follow. Projects like these is why I love this job.
