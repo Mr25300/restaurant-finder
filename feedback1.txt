@@ -1,0 +1,45 @@
+"Any sufficiently advanced technology is indistinguishable from magic." - Clarke's Three Laws
+
+Achievement unlocked! Bonus 1 completed!
+Achievement unlocked! Bonus 2 completed!
+Achievement unlocked! Bonus 3 completed!
+Achievement unlocked! Bonus 4 completed!
+
+C: ?? + 1 + 2 + 3 + 4 = 100
+T: ?? + 1 + 2 + 3 + 4 = 100
+A: ?? + 1 + 2 + 3 + 4 = 100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Having said that. 2 days is not enough for me to parse this code. More feedback to follow.
