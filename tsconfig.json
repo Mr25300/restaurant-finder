@@ -1,11 +1,14 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "CommonJS",
-    "outDir": "dist", //optionally use “” to not use an output folder
+    "target": "es6",
+    "outDir": "dist",
     "sourceMap": true,
     "strict": true,
-    "strictPropertyInitialization": false
+    "strictPropertyInitialization": false,
+    "module": "ESNext",
+    "moduleResolution": "bundler"
   },
-  "include": ["src/**/*"],
- }
+  "include": [
+    "src/**/*"
+  ]
+}

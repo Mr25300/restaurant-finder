@@ -24,7 +24,7 @@ const MAP_SET_DEST: HTMLButtonElement = document.getElementById(
 // #endregion
 
 const LOCATION_ICON: HTMLImageElement = new Image();
-LOCATION_ICON.src = 'assets/location-icon.png';
+LOCATION_ICON.src = 'res/assets/location-icon.png';
 
 /**
  * Generates a constant pseudo-random value for constant inputs.
@@ -947,10 +947,12 @@ class DisplayMap {
     });
 
     MAP_CANVAS.addEventListener('mousedown', (event: MouseEvent) => {
-      mouseX = event.clientX;
-      mouseY = event.clientY;
+      if (event.button == 0) {
+        mouseX = event.clientX;
+        mouseY = event.clientY;
 
-      MAP_CANVAS.classList.add('drag');
+        MAP_CANVAS.classList.add('drag');
+      }
 
       this.clearInfo();
       this.clearPositionInfo();

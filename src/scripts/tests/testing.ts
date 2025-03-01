@@ -1,4 +1,4 @@
-function outPutResults(
+function outputResults(
   div: HTMLDivElement | null,
   name: string,
   passed: boolean,
@@ -39,14 +39,14 @@ function tests(div: HTMLDivElement): void {
 
   // Check if sorting is correct
   if (sorted.toString() !== expectedSortedArray.toString()) {
-    outPutResults(
+    outputResults(
       div,
       'Sort Test',
       false,
       `Failure - Expected ${expectedSortedArray}, got ${sorted}`
     );
   } else {
-    outPutResults(div, 'Sort Test', true, 'Success');
+    outputResults(div, 'Sort Test', true, 'Success');
   }
   // Test Null case
   input = [];
@@ -55,14 +55,14 @@ function tests(div: HTMLDivElement): void {
 
   // Check if sorting is correct
   if (sorted.toString() !== expectedSortedArray.toString()) {
-    outPutResults(
+    outputResults(
       div,
       'Null Number Sort Test',
       false,
       `Failure - Expected ${expectedSortedArray}, got ${sorted}`
     );
   } else {
-    outPutResults(div, 'Null Number Sort Test', true, 'Success');
+    outputResults(div, 'Null Number Sort Test', true, 'Success');
   }
 
   // Test 3: Sort and Binary Search
@@ -72,14 +72,14 @@ function tests(div: HTMLDivElement): void {
 
   // Check if sorting is correct
   if (sorted.toString() !== expectedSortedArray.toString()) {
-    outPutResults(
+    outputResults(
       div,
       'String Sort Test',
       false,
       `Expected ${expectedSortedArray}, got ${sorted}`
     );
   } else {
-    outPutResults(div, 'String Sort Test', true, 'Success');
+    outputResults(div, 'String Sort Test', true, 'Success');
   }
 
   // Test Null case
@@ -89,14 +89,14 @@ function tests(div: HTMLDivElement): void {
 
   // Check if sorting is correct
   if (sorted.toString() !== expectedSortedArray.toString()) {
-    outPutResults(
+    outputResults(
       div,
       'Null String Sort Test',
       false,
       `Expected ${expectedSortedArray}, got ${sorted}`
     );
   } else {
-    outPutResults(div, 'Null String Sort Test', true, 'Success');
+    outputResults(div, 'Null String Sort Test', true, 'Success');
   }
 
   // Test 3: Intersection
@@ -105,14 +105,14 @@ function tests(div: HTMLDivElement): void {
   let output: Uint32Array = getIntersections([firstInput, secondInput], 10);
   let expected: number[] = [1, 4];
   if (output.toString() !== expected.toString()) {
-    outPutResults(
+    outputResults(
       div,
       'Interesction Test',
       false,
       `Expected ${expected}, got ${output.toString}`
     );
   } else {
-    outPutResults(div, 'Intersection Test', true, 'Success');
+    outputResults(div, 'Intersection Test', true, 'Success');
   }
   // Test 4: No intersection
   firstInput = [1, 2, 3, 4];
@@ -120,14 +120,14 @@ function tests(div: HTMLDivElement): void {
   output = getIntersections([firstInput, secondInput], 10);
   expected = [];
   if (output.toString() !== expected.toString()) {
-    outPutResults(
+    outputResults(
       div,
       'Null Interesction Test',
       false,
       `Expected ${expected}, got ${output.toString}`
     );
   } else {
-    outPutResults(div, 'Null Intersection Test', true, 'Success');
+    outputResults(div, 'Null Intersection Test', true, 'Success');
   }
 
   // Test 5: Frugal Test
@@ -149,9 +149,9 @@ function tests(div: HTMLDivElement): void {
     )
   );
   if (out === expectedString) {
-    outPutResults(div, 'Go Frugal Test', true, 'Success');
+    outputResults(div, 'Go Frugal Test', true, 'Success');
   } else {
-    outPutResults(
+    outputResults(
       div,
       'Go Frugal Test',
       false,
@@ -175,9 +175,9 @@ function tests(div: HTMLDivElement): void {
     )
   );
   if (out === expectedString) {
-    outPutResults(div, 'Saving Fuel Test', true, 'Success');
+    outputResults(div, 'Saving Fuel Test', true, 'Success');
   } else {
-    outPutResults(
+    outputResults(
       div,
       'Saving Fuel Test',
       false,
